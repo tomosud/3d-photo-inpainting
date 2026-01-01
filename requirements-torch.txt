@@ -1,0 +1,27 @@
+# PyTorch 1.4.0 と互換性のあるパッケージ
+#
+# インストール方法:
+# 1. まず Cython と numpy をインストール:
+#    uv pip install Cython numpy
+#
+# 2. 次に基本パッケージをインストール:
+#    uv pip install -r requirements.txt
+#
+# 3. 最後に PyTorch をインストール:
+#    CPU版: uv pip install torch==1.4.0+cpu torchvision==0.5.0+cpu -f https://download.pytorch.org/whl/torch_stable.html
+#    CUDA 10.1版: uv pip install torch==1.4.0+cu101 torchvision==0.5.0+cu101 -f https://download.pytorch.org/whl/torch_stable.html
+
+# ビルド依存関係
+Cython>=0.29.0,<3.0.0
+numpy>=1.16.0,<1.20.0
+
+# コア依存関係
+opencv-python==4.3.0.38
+vispy==0.6.4
+moviepy==1.0.2
+transforms3d==0.3.1
+networkx>=2.3,<3.0
+scikit-image>=0.16.0,<0.18.0
+
+# Cython が必要なパッケージ (最後にインストール)
+cynetworkx

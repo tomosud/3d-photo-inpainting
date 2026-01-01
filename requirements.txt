@@ -1,7 +1,14 @@
-opencv-python==4.2.0.32
-vispy==0.6.4
-moviepy==1.0.2
-transforms3d==0.3.1
-networkx==2.3
-cynetworkx
+# Build dependencies (must be installed first)
+Cython>=0.29.0
+numpy>=1.16.0
+
+# Core dependencies
+opencv-python>=4.3.0.38
+vispy>=0.6.4
+moviepy>=1.0.2
+transforms3d>=0.3.1
+networkx>=2.3
 scikit-image
+
+# This requires Cython to be installed first
+cynetworkx
